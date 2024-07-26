@@ -7,7 +7,14 @@ import { AppComponent } from './app.component';
 
 import { SharedModule } from './shared/shared.module';
 
+// app local setting
+import  localeEs  from "@angular/common/locales/es";
+import  localeFr  from "@angular/common/locales/fr";
 
+import { registerLocaleData } from "@angular/common";
+
+registerLocaleData( localeEs )
+registerLocaleData( localeFr )
 
 @NgModule({
   declarations: [
